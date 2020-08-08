@@ -13,3 +13,12 @@ contains 2 functions and 1 defined class. The `BPS_basic` function is the algori
 Gaussian dist of arbitrary dimension, mean and covariance matrix. The `Gaussian` class is inputted into `BPS_basic` so that the particle moves in a Gaussian energy field.
 `x_v_t_arbitrary_times` allows us to compute the particle's position and velocity at any time during its travel.
 
+### [Basic_BPS_run](Github_Expt1_Basic_BPS_run.ipynb)
+First, the functions in **Basic_BPS_with_Gaussian** is executed. Then, 601 chains are run and the outputs from `BPS_basic` are saved. Then, KL divergences are calculated.
+
+### [ADMC_HMC_run](Github_Expt1_ADMC_HMC_run.ipynb)
+Same as **Basic_BPS_run**: running 601 chains, saving data, and computing KL divergences at every 100th iterations (from 0 to 28000). 
+But ADMC-HB and HMC are employed. **PINTS** is used.
+
+### [graphs_plotting](Github_Expt1_graphs_plotting.ipynb)
+Compute and plot graphs to show different results, such as KL-divergences against iterations, cpu times, number of pdf evals.
